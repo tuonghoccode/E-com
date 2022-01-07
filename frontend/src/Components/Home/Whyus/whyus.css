@@ -1,0 +1,29 @@
+.why-us{
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 200px;
+}
+.why-us__item{
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    width: 200px;
+    margin-bottom: auto;;
+}
+.logo img{
+    height: 100px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.text .title{
+    font-weight: 500;
+    font-size: 20px;
+}
+.text .desc{
+    font-weight: 400;
+    color: #22262a;
+}

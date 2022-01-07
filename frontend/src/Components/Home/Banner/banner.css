@@ -1,0 +1,61 @@
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #40BFFF;
+    margin-top: 150px;
+    padding: 0 50px 0 50px;
+
+}
+.banner__image{
+    width: 100%;
+}
+.banner__image img {
+    width: 100%;
+    object-fit:cover;
+    transform: scaleX(-1) translateY(-20%);
+    animation : updown 3s linear infinite forwards;
+}
+.banner__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color:#fff;
+    gap: 30px;
+}
+.__title{
+    width: 500px;
+    word-break:break-word;
+    text-align:left;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.__shop-now-link{
+    color:white;
+    text-decoration: none;
+    position: relative;
+}
+.__shop-now-link::before{
+    content:'';
+    height: 3px;
+    width: 60%;
+    background: white;
+    position: absolute;
+    bottom:0;
+    transform: translateY(5px);
+}
+
+@keyframes updown{
+    0%{
+        transform: scaleX(-1)  translateY(0);
+    }
+    50%{
+        transform:  scaleX(-1)  translateY(-20%);
+
+    }
+    100%{
+        transform:  scaleX(-1)  translateY(0%);
+
+    }
+}
